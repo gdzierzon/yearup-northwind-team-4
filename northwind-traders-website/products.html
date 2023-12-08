@@ -73,15 +73,36 @@
         </div>
       </div>
     </nav>
-    <div>
-      <label for="exampleSelect1" class="form-label mt-4">Select Products By</label>
-      <select class="form-select w-25" id="selectProducts">
-        <option>Select One</option>
-        <option>Select Category</option>
-        <option>View All</option>
-      </select>
+    <div class="container pt-4">
+      <div class="split-container">
+        <div class="split-left">
+          <label for="exampleSelect1" class="form-label mt-4"
+            >Select Products By</label
+          >
+          <select class="form-select" id="selectProducts">
+            <option>Select One</option>
+            <option>Select Category</option>
+            <option>View All</option>
+          </select>
+        </div>
+        <template id="productsTemplate">
+          <div class="card mt-2">
+            <h4 id="products-header" class="card-header">Tonight</h4>
+            <div class="card-body">
+              <div class="product-data">
+                <div>Supplier:</div>
+                <div class="productSupplier" id="supplier-value"></div>
+                <div>Unit In Stock:</div>
+                <div class="productsInStock" id="stock-value"></div>
+                <div>Unit Price:</div>
+                <div class="productUnitPrice" id="price-value"></div>
+              </div>
+            </div>
+          </div>
+        </template>
+        <div id="productContainer" class="split-right"></div>
+      </div>
     </div>
-
     <script src="scripts/services/productsService.js"></script>
     <script src="scripts/products.js"></script>
     <script
