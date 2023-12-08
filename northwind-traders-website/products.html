@@ -73,15 +73,6 @@
         </div>
       </div>
     </nav>
-    <!-- <div>
-      <label for="exampleSelect1" class="form-label mt-4">Select Products By</label>
-      <select class="form-select w-25" id="selectProducts">
-        <option>Select One</option>
-        <option>Select Category</option>
-        <option>View All</option>
-      </select>
-    </div> -->
-
     <div class="container pt-4">
       <div class="split-container">
         <div class="split-left">
@@ -93,36 +84,25 @@
             <option>Select Category</option>
             <option>View All</option>
           </select>
-          <!-- <h6 class="text-danger ml-2">Search City:</h6>
-              <input type="text" class="form-control mb-3" id="citySearchInput" placeholder="Enter City Name">
-              <div id="cityListContainer"></div> -->
         </div>
-
         <template id="productsTemplate">
           <div class="card mt-2">
             <h4 id="products-header" class="card-header">Tonight</h4>
             <div class="card-body">
-              <!-- <img id="weather-icon" src="https://api.weather.gov/icons/land/day/snow,70/snow,60?size=medium" alt=""> -->
               <div class="product-data">
-                <div>Name:</div>
-                <div class="productName" id="name-value">32 F</div>
                 <div>Supplier:</div>
-                <div class="productSupplier" id="supplier-value">
-                  5 to 13 mph - W
-                </div>
+                <div class="productSupplier" id="supplier-value"></div>
                 <div>Unit In Stock:</div>
-                <div class="productsInStock" id="stock-value">Light Snow</div>
+                <div class="productsInStock" id="stock-value"></div>
                 <div>Unit Price:</div>
-                <div class="productUnitPrice" id="price-value">Light Snow</div>
+                <div class="productUnitPrice" id="price-value"></div>
               </div>
             </div>
           </div>
         </template>
-
-        <div id="forecastContainer" class="split-right"></div>
+        <div id="productContainer" class="split-right"></div>
       </div>
     </div>
-
     <script src="scripts/services/productsService.js"></script>
     <script src="scripts/products.js"></script>
     <script
